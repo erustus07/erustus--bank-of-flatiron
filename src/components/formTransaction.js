@@ -4,8 +4,7 @@ function TransactionForm({onSubmit}){
     const[date, setDate] = useState('')
     const [description, setDescription] = useState('');
     const[category, setCategory] = useState('')
-    const [amount, setAmount] = useState('');
-  
+  const[amount, setAmount] = useState('');
     const handleSubmit = (event) => {
       event.preventDefault();
       onSubmit({ date, description, category, amount });
